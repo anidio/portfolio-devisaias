@@ -1,7 +1,10 @@
 import About from "../components/About";
 import BackgroundGrid from "../components/BackgroundGrid";
+import Contact from "../components/Contact";
+import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
+import Services from "../components/Services";
 import Skills from "../components/Skills";
 
 export default function Home() {
@@ -10,8 +13,12 @@ export default function Home() {
       <BackgroundGrid />
       <Header />
       <About/>
+      <Services/>
       <Projects />
       <Skills/>
+      <Experience/>
+    
+      <Contact/>
     </div>
   );
 }

@@ -33,7 +33,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="w-full py-20 px-6 text-white">
+    <section className="w-full py-20 px-6 text-white" id="projects">
       <h2 className="text-4xl font-bold mb-10 text-center neon-text">
         🚀 Meus Projetos
       </h2>
