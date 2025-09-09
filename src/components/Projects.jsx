@@ -11,11 +11,11 @@ export default function Projects() {
       liveLink: "https://frevo-na-mesa-front.vercel.app/",
       gallery: [
         "/frevo-na-mesa.png",
-        "/frevo1",
-        "/frevo2",
-        "/frevo3",
-        "/frevo4",
-        "/frevo5"
+        "/frevo1.png",
+        "/frevo2.png",
+        "/frevo3.png",
+        "/frevo4.png",
+        "/frevo5.png"
       ],
     },
     {
