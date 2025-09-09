@@ -11,7 +11,6 @@ export default function Projects() {
       liveLink: "https://frevo-na-mesa-front.vercel.app/",
       gallery: [
         "/frevo-na-mesa.png",
-        "/dev2.png",
         "/frevo1",
         "/frevo2",
         "/frevo3",
