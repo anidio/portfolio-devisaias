@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Projects() {
   const [startIndex, setStartIndex] = useState(0);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [projectsPerPage, setProjectsPerPage] = useState(3);
 
   const projects = [
     {
@@ -21,12 +22,12 @@ export default function Projects() {
     {
       title: "Sistema de Gerenciamento de Tarefas",
       description: "Aplicação web para gerenciar projetos e tarefas, construída com React e API RESTful em PHP.",
-      liveLink: null, // Este projeto não tem link ao vivo
+      liveLink: null,
       gallery: [
         "/dev2.png",
         "/dev1.png",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+1",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+2"
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+1",
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+2"
       ],
     },
     {
@@ -36,8 +37,8 @@ export default function Projects() {
       gallery: [
         "/dev1.png",
         "/dev2.png",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+1",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+2"
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+1",
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+2"
       ],
     },
     {
@@ -47,21 +48,41 @@ export default function Projects() {
       gallery: [
         "/dev2.png",
         "/dev1.png",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+1",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+2"
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+1",
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+2"
+      ],
+    },
+    {
+      title: "API de Autenticação JWT",
+      description: "API robusta para autenticação de usuários utilizando JWT, desenvolvida com Spring Boot.",
+      liveLink: "https://github.com/seuusuario/jwt-auth-api",
+      gallery: [
+        "/dev1.png",
+        "/dev2.png",
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+1",
+        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+2"
       ],
     },
   ];
 
-  const projectsPerPage = 3;
+  useEffect(() => {
+    const handleResize = () => {
+      setProjectsPerPage(window.innerWidth < 768 ? 1 : 3);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleNext = () => {
-    setStartIndex((prevIndex) => (prevIndex + 1) % projects.length);
+    setStartIndex((prevIndex) => (prevIndex + projectsPerPage) % projects.length);
   };
 
   const handlePrev = () => {
     setStartIndex((prevIndex) =>
-      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+      prevIndex === 0 ? Math.max(0, projects.length - projectsPerPage) : prevIndex - projectsPerPage
     );
   };
 
@@ -90,28 +111,51 @@ export default function Projects() {
       </h2>
       <div className="relative max-w-5xl mx-auto">
         <div className="flex justify-center items-stretch gap-8">
-          {visibleProjects.map((project, index) => (
+          {projectsPerPage === 1 ? (
             <div
-              key={index}
-              className="flex-1 min-w-0 bg-[#0f172a] border border-cyan-500 rounded-xl shadow-lg shadow-cyan-500/30 overflow-hidden flex flex-col transition-transform hover:scale-[1.02] duration-300 ease-in-out"
+              key={startIndex}
+              className="flex-1 min-w-0 bg-[#0f172a] border border-cyan-500 rounded-xl shadow-lg shadow-cyan-500/30 overflow-hidden flex flex-col transition-transform duration-300 ease-in-out"
             >
               <img
-                src={project.gallery[0]}
-                alt={project.title}
+                src={visibleProjects[0].gallery[0]}
+                alt={visibleProjects[0].title}
                 className="w-full h-40 object-cover border-b-2 border-cyan-500"
               />
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-center">{project.title}</h3>
-                <p className="text-sm text-gray-300 text-center flex-1">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-center">{visibleProjects[0].title}</h3>
+                <p className="text-sm text-gray-300 text-center flex-1">{visibleProjects[0].description}</p>
                 <button
-                  onClick={() => openModal(project)}
+                  onClick={() => openModal(visibleProjects[0])}
                   className="text-cyan-400 hover:text-purple-500 transition-colors mt-4 text-center block"
                 >
                   Ver Projeto →
                 </button>
               </div>
             </div>
-          ))}
+          ) : (
+            visibleProjects.map((project, index) => (
+              <div
+                key={index}
+                className="flex-1 min-w-0 bg-[#0f172a] border border-cyan-500 rounded-xl shadow-lg shadow-cyan-500/30 overflow-hidden flex flex-col transition-transform hover:scale-[1.02] duration-300 ease-in-out"
+              >
+                <img
+                  src={project.gallery[0]}
+                  alt={project.title}
+                  className="w-full h-40 object-cover border-b-2 border-cyan-500"
+                />
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-xl font-semibold mb-2 text-center">{project.title}</h3>
+                  <p className="text-sm text-gray-300 text-center flex-1">{project.description}</p>
+                  <button
+                    onClick={() => openModal(project)}
+                    className="text-cyan-400 hover:text-purple-500 transition-colors mt-4 text-center block"
+                  >
+                    Ver Projeto →
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
         </div>
 
         {/* Navigation Buttons */}
