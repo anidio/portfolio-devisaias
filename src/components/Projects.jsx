@@ -83,7 +83,7 @@ export default function Projects() {
 
   return (
     <section className="w-full py-20 px-6 text-white" id="projects">
-      <h2 className="glitch w-full flex justify-center text-4xl md:text-5xl font-bold mb-12" data-text="Meus Projetos">
+      <h2 className="glitch w-full flex justify-center text-4xl md:text-5xl font-bold mb-12" data-text="#Meus Projetos">
         🚀 #Meus Projetos
       </h2>
       <div className="relative max-w-5xl mx-auto">
