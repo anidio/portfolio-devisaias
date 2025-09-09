@@ -16,11 +16,11 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="flex flex-col items-center">
             <Mail className="text-cyan-400 w-8 h-8 mb-2" />
-            <p className="text-white">seuemail@email.com</p>
+            <p className="text-white">isaias.reng@gmail.com</p>
           </div>
           <div className="flex flex-col items-center">
             <Phone className="text-cyan-400 w-8 h-8 mb-2" />
-            <p className="text-white">(00) 9 9999-9999</p>
+            <p className="text-white">(81) 9 8501-6424</p>
           </div>
           <div className="flex flex-col items-center">
             <MapPin className="text-cyan-400 w-8 h-8 mb-2" />
@@ -29,13 +29,13 @@ const Contact = () => {
         </div>
 
         <div className="flex justify-center gap-8">
-          <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/anidio" target="_blank" rel="noopener noreferrer">
             <Github className="w-8 h-8 text-white hover:text-cyan-400 transition-colors" />
           </a>
-          <a href="https://www.linkedin.com/in/seuusuario/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/isaiasroberto/" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-8 h-8 text-white hover:text-cyan-400 transition-colors" />
           </a>
-          <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/devisaias" target="_blank" rel="noopener noreferrer">
             <Instagram className="w-8 h-8 text-white hover:text-cyan-400 transition-colors" />
           </a>
         </div>

@@ -2,19 +2,19 @@ import React from 'react';
 
 const services = [
   {
-    title: 'Criação de Sites',
-    description: 'Desenvolvimento de sites modernos, responsivos e otimizados para SEO.',
+    title: "Criação de Sites e App's",
+    description: 'Desenvolvo sites modernos, otimizados e responsivos que capturam a atenção e convertem visitantes em clientes.',
     image: 'https://cdn-icons-png.flaticon.com/512/1497/1497762.png', // Ícone representando criação de sites
   },
   {
-    title: 'Landing Pages',
-    description: 'Páginas de alta conversão para campanhas e geração de leads.',
-    image: 'https://cdn-icons-png.flaticon.com/512/3094/3094384.png', // Ícone representando landing pages
+    title: 'Desenvolvimento de APIs',
+    description: 'Construo APIs robustas e escaláveis em Java com Spring Boot para integração de sistemas e microsserviços eficientes.',
+    image: 'https://cdn-icons-png.flaticon.com/512/3094/3094384.png', // Ícone representando APIs
   },
   {
-    title: 'Projetos PDV',
-    description: 'Soluções digitais para pontos de venda e sistemas personalizados.',
-    image: 'https://cdn-icons-png.flaticon.com/512/1804/1804352.png', // Ícone representando projetos PDV
+    title: 'Automação e Robótica',
+    description: 'Crio soluções de automação e robótica personalizadas com Arduino e ESP32, transformando ideias em projetos inovadores e funcionais.',
+    image: 'https://cdn-icons-png.flaticon.com/512/1804/1804352.png', // Ícone representando robótica
   },
 ];
 
