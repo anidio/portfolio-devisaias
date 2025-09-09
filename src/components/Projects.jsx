@@ -12,8 +12,11 @@ export default function Projects() {
       gallery: [
         "/frevo-na-mesa.png",
         "/dev2.png",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+1",
-        "https://via.placeholder.com/800x600/0d1a26/00ffff?text=Galeria+Imagem+2"
+        "/frevo1",
+        "/frevo2",
+        "/frevo3",
+        "/frevo4",
+        "/frevo5"
       ],
     },
     {
