@@ -14,11 +14,20 @@ export default function Header() {
           <a href="#contact" className="text-gray-300 hover:text-cyan-400">Contato</a>
         </nav>
         <div className="flex space-x-4">
-          <FaGithub className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
-          <FaYoutube className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
-          <FaInstagram className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
-          <FaTiktok className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
+          <a href="https://github.com/anidio" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
+          </a>
+          <a href="https://www.youtube.com/@devisaias" target="_blank" rel="noopener noreferrer">
+            <FaYoutube className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
+          </a>
+          <a href="https://www.instagram.com/devisaias/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
+          </a>
+          <a href="https://www.tiktok.com/@devisaias" target="_blank" rel="noopener noreferrer">
+            <FaTiktok className="text-cyan-400 hover:text-purple-500 cursor-pointer" />
+          </a>
         </div>
+
       </div>
     </header>
   );

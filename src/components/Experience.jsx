@@ -2,23 +2,23 @@ import React from 'react';
 
 const experiences = [
   {
-    role: 'Desenvolvedor Backend',
-    company: 'Empresa X',
-    period: 'Jan 2022 - Atual',
+    role: 'Freelancer',
+    company: 'Autônomo',
+    period: 'Agosto 2025 - atual',
     description:
-      'Atuo no desenvolvimento de APIs em Java com Spring Boot, integração com microsserviços e automação de processos.',
+      'Desenvolvimento de sites, lojas virtuais e sistemas personalizados para pequenos negócios utilizando PHP, WordPress e JavaScript.',
   },
   {
-    role: 'Desenvolvedor Full Stack',
-    company: 'Empresa Y',
-    period: 'Mar 2020 - Dez 2021',
+    role: 'Desenvolvedor FullStack',
+    company: 'Fcamara (Cliente RaiaDrogasil)',
+    period: 'Maio 2022 - Agosto 2025',
     description:
-      'Trabalhei no desenvolvimento de aplicações web usando Laravel, React e Docker, além de manutenção e melhorias em sistemas legados.',
+      'Atuei no desenvolvimento de APIs em Java com Spring Boot, integração com microsserviços e automação de processos.',
   },
   {
     role: 'Freelancer',
     company: 'Autônomo',
-    period: '2018 - 2020',
+    period: '2020 - 2022',
     description:
       'Desenvolvimento de sites, lojas virtuais e sistemas personalizados para pequenos negócios utilizando PHP, WordPress e JavaScript.',
   },
