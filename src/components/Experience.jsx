@@ -2,18 +2,11 @@ import React from 'react';
 
 const experiences = [
   {
-    role: 'Freelancer',
-    company: 'Autônomo',
-    period: 'Agosto 2025 - atual',
-    description:
-      'Desenvolvimento de sites, lojas virtuais e sistemas personalizados para pequenos negócios utilizando PHP, WordPress e JavaScript.',
-  },
-  {
     role: 'Desenvolvedor FullStack',
     company: 'Fcamara (Cliente RaiaDrogasil)',
     period: 'Maio 2022 - Agosto 2025',
     description:
-      'Atuei no desenvolvimento de APIs em Java com Spring Boot, integração com microsserviços e automação de processos.',
+      'Atuei no desenvolvimento e manutenção de microserviços java no time de marketplace da RD, integração com microsserviços,Tratamento de bugs em produção e atuação em suporte N2',
   },
   {
     role: 'Desenvolvedor Freelancer',
