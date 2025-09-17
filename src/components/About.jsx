@@ -20,20 +20,20 @@ export default function About() {
         </div>
 
         <div className="md:w-1/2">
-          <h2 className="text-4xl font-bold mb-6 neon-text">👾 Sobre Mim</h2>
+          <h2 className="text-4xl font-bold mb-6 neon-text">👾 Quem eu sou?</h2>
           <div className="bg-[#0f172a] border border-purple-500 rounded-xl p-8 shadow-lg shadow-purple-500/30 text-left">
             <p className="text-lg leading-relaxed">
-              Olá, eu sou <span className="text-purple-400 font-bold">@devisaias</span>,
-              desenvolvedor apaixonado por tecnologia, robótica, eletrônica e tudo que envolve inovação! 🦾🚀
+              Olá, eu sou <span className="text-purple-400 font-bold">Isaías Roberto</span>, 
+              um desenvolvedor Full Stack com ênfase em soluções criativas e eficientes. 
+              Minha paixão é transformar ideias complexas em aplicações web e APIs robustas que resolvem problemas reais.
               <br /><br />
-              Tenho experiência com <span className="text-cyan-400">React, Java, Spring Boot e PHP</span>. 
-              Entusiasta de hardware, placas eletrônicas e automações usando <span className="text-green-400">Arduino</span> & <span className="text-yellow-400">ESP32</span>.
+              Com mais de 5 anos de experiência, sou especialista em <span className="text-cyan-400">React, Java e Spring Boot</span>. 
+              Também tenho um grande interesse em hardware e projetos de automação usando tecnologias como <span className="text-green-400">Arduino</span> & <span className="text-yellow-400">ESP32</span>.
               <br /><br />
-              Minha missão é criar soluções criativas, eficientes e com aquele toque futurista que eu amo!
+              Estou sempre em busca de novos desafios, seja para construir um site do zero ou otimizar um sistema existente. Se você tem um projeto que precisa de uma abordagem técnica e criativa, vamos conversar!
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );

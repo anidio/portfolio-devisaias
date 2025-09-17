@@ -16,11 +16,12 @@ const experiences = [
       'Atuei no desenvolvimento de APIs em Java com Spring Boot, integração com microsserviços e automação de processos.',
   },
   {
-    role: 'Freelancer',
+    role: 'Desenvolvedor Freelancer',
     company: 'Autônomo',
-    period: '2020 - 2022',
+    period: '2020 - Atualmente',
+
     description:
-      'Desenvolvimento de sites, lojas virtuais e sistemas personalizados para pequenos negócios utilizando PHP, WordPress e JavaScript.',
+      'Entreguei mais de 10 projetos para pequenos negócios, incluindo sites, lojas virtuais em WordPress e sistemas personalizados. Fui responsável por todo o ciclo de vida do projeto, desde a coleta de requisitos até a implantação e suporte.',
   },
 ];
 

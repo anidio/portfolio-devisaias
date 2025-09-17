@@ -7,7 +7,6 @@ const skills = [
   { name: 'Spring', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
   { name: 'Laravel', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg' },
   { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
-  { name: 'Codeigniter', icon: 'https://cdn.worldvectorlogo.com/logos/codeigniter.svg' }, // SVG externo manual
   { name: 'Tailwind CSS', icon: 'https://www.svgrepo.com/show/374118/tailwind.svg' },
   { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
@@ -21,12 +20,9 @@ const Skills = () => {
   return (
     <section id="skills" className="py-16 bg-black">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="glitch w-full flex justify-center text-4xl md:text-5xl font-bold mb-8"data-text="#Habilidades">
+        <h2 className="glitch w-full flex justify-center text-4xl md:text-5xl font-bold mb-8" data-text="#Habilidades">
             #Habilidades
         </h2>
-
-
-
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
           {skills.map((skill) => (
             <div
