@@ -21,13 +21,16 @@ export default function Projects() {
     },
     {
       title: "Sistema de Gerenciamento de Tarefas",
-      description: "Aplicação web para gerenciar projetos e tarefas, construída com React e API RESTful em PHP.",
-      liveLink: null,
+      description: "Aplicativo web construído com React que funciona como um organizador diário. Ele permite aos usuários gerenciar uma lista de atividades, monitorar a ingestão de água e calorias, e acompanhar seu progresso diário de forma simples e intuitiva.",
+      liveLink: "https://my-daily-organizer.vercel.app/",
       gallery: [
-        "/dev2.png",
-        "/dev1.png",
-        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+1",
-        "https://via.placeholder.com/800x600/0d1a2a/00ffff?text=Galeria+Imagem+2"
+        "/organizer6.png",
+        "/organizer1.png",
+        "/organizer2.png",
+        "/organizer3.png",
+        "/organizer4.png",
+        "/organizer5.png",
+        "/organizer6.png"
       ],
     },
     {
