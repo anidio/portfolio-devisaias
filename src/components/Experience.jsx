@@ -2,16 +2,24 @@ import React from 'react';
 
 const experiences = [
   {
-    role: 'Desenvolvedor Full Stack',
-    company: 'RD',
-    period: 'Jan 2022 - Ago 2025',
+    role: 'Freelancer',
+    company: 'Autônomo',
+    period: 'Agosto 2025 - atual',
     description:
-      'Desenvolvimento de APIs em Java com Spring Boot, implementando microsserviços e automações. Participei ativamente da arquitetura e da integração com serviços da AWS.',
+      'Desenvolvimento de sites, lojas virtuais e sistemas personalizados para pequenos negócios utilizando PHP, WordPress e JavaScript.',
+  },
+  {
+    role: 'Desenvolvedor FullStack',
+    company: 'Fcamara (Cliente RaiaDrogasil)',
+    period: 'Maio 2022 - Agosto 2025',
+    description:
+      'Atuei no desenvolvimento de APIs em Java com Spring Boot, integração com microsserviços e automação de processos.',
   },
   {
     role: 'Desenvolvedor Freelancer',
     company: 'Autônomo',
     period: '2020 - Atualmente',
+
     description:
       'Entreguei mais de 10 projetos para pequenos negócios, incluindo sites, lojas virtuais em WordPress e sistemas personalizados. Fui responsável por todo o ciclo de vida do projeto, desde a coleta de requisitos até a implantação e suporte.',
   },
